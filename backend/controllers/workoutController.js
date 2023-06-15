@@ -20,7 +20,7 @@ const getWorkout = async (req, res) => {
   }
 
   const workout = await Workout.findById(id)
-
+// if there is no project 
   if (!workout) {
     return res.status(404).json({error: 'No such workout'})
   }

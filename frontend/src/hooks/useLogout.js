@@ -13,7 +13,7 @@ export const useLogout = () => {
     // dispatch logout action
     dispatch({ type: 'LOGOUT' })
       // next thing for avoiding flashes of other workouts
-    dispatchWorkouts({ type: 'SET_WORKOUTS', payload: null })
+    dispatchWorkouts({ type: 'SET_PROJECTS', payload: null })
   }
 
   return { logout }
